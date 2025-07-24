@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Ventas - Alto Impacto Visual</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Dashboard de Ventas</h1>
+            <div class="header-controls">
+                <!-- Controles de filtro aquí -->
+            </div>
+        </header>
+
+        <main class="dashboard-main">
+            <section class="kpi-cards-container">
+                <!-- Las tarjetas KPI se cargarán aquí -->
+            </section>
+
+            <section class="charts-container">
+                <div class="chart-card">
+                    <h2>Ventas Mensuales</h2>
+                    <canvas id="salesByMonthChart"></canvas>
+                </div>
+                <div class="chart-card">
+                    <h2>Ventas por Categoría</h2>
+                    <canvas id="salesByCategoryChart"></canvas>
+                </div>
+            </section>
+
+            <section class="top-products-container">
+                <h2>Productos Más Vendidos</h2>
+                <table id="topProductsTable">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Ventas</th>
+                            <th>Unidades</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Los productos se cargarán aquí -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
